@@ -1,0 +1,18 @@
+{
+  "name": "automation-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:login": "npx playwright test ./test/test.spec.js --reporter=html && npx playwright show-report",
+    "test:all": "npx playwright test ./test --reporter=html && npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
+  }
+}
